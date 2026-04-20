@@ -357,3 +357,4 @@ if ($has_noticias):
 
 
 <?php require_once("includes/footer.php"); ?>
+
