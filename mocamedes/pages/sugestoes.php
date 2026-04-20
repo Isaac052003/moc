@@ -30,6 +30,12 @@ require_once("../includes/header.php");
     <p style="color:var(--muted-foreground); max-width:480px; margin:0 auto 2rem;">
       Esta funcionalidade está em desenvolvimento. Em breve poderá enviar as suas sugestões à Administração Municipal.
     </p>
+    <a href="/index.php" class="btn btn-primary">🏠 Voltar ao Início</a>
+  </div>
+</main>
+
+<?php require_once("../includes/footer.php"); ?>
+
     <a href="/mocamedes/index.php" class="btn btn-primary">🏠 Voltar ao Início</a>
   </div>
 </main>
