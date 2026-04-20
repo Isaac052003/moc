@@ -1,20 +1,17 @@
 <?php
-// =========================================
-// CONEXÃO COM O BANCO DE DADOS
-// =========================================
+$host   = getenv('MYSQLHOST')     ?: 'localhost';
+$user   = getenv('MYSQLUSER')     ?: 'root';
+$pass   = getenv('MYSQLPASSWORD') ?: '';
+$db     = getenv('MYSQLDATABASE') ?: 'mocamedes';
+$port   = (int)(getenv('MYSQLPORT') ?: 3306);
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "mocamedes";
-
-$conexao = new mysqli($host, $user, $pass, $db);
+$conexao = new mysqli($host, $user, $pass, $db, $port);
 
 if ($conexao->connect_error) {
-    die("Erro na conexão: " . $conexao->connect_error);
+    die("Erro de conexão: " . $conexao->connect_error);
 }
-
-$conexao->set_charset("utf8");
+$conexao->set_charset("utf8mb4");
+?>
 
 // =========================================
 // FUNÇÕES AUXILIARES GLOBAIS
