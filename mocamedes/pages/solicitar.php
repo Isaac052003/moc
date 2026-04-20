@@ -638,3 +638,8 @@ if(isset($_POST['enviar_solicitacao'])){
     </script>
 </body>
 </html>
+            }
+        });
+    </script>
+</body>
+</html>
